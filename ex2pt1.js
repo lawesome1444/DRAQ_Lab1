@@ -1,5 +1,7 @@
 //2(a) Data Rep arrow function
-let DataRep = ()=>{
+//Compact and simple function that prints text to the console
+let arrowFuncPrint = ()=>{
     console.log("Data Representation & Querying!");
 }
-DataRep();
+//Calls the arrow text printing function
+arrowFuncPrint();
