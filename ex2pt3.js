@@ -1,7 +1,7 @@
 //2(c) Arrow function returning the sum of 2 numbers
-let sumOfDataRep = (a, b)=>{
+let sumOfArrowFunc = (num1, num2)=>{
     //Get the sum of the numbers
-    return a + b;
+    return num1 + num2;
 }
 //Call the sumOfDataRep function and print it's value
-console.log(sumOfDataRep(5, 4));
+console.log(sumOfArrowFunc(5, 4));
