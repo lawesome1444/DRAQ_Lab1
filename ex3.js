@@ -18,10 +18,14 @@ addTask("Sleeping");
 
 console.log("\nExercise 3(c)");
 //3(c) Iterate over every element in the taskList array and print them one by one into the console
-let listAllTasks = taskList.map((item)=>{
-    console.log(item);
-})
+let listAllTasks = ()=>{
+    taskList.forEach((item)=>{
+        console.log(item);
+    });
+}
+listAllTasks();
 
+console.log("\nExercise 3(d)");
 //3(d) Receives a task and deletes it from the taskList array
 deleteTask =(task)=>{
     //Stores the index value
@@ -31,8 +35,8 @@ deleteTask =(task)=>{
     //Delete 1 array element at the position found earlier
     //Aka, delete the passed task element
     taskList.splice(index, 1);
-    //Print the array to demonstrate the element was deleted
-    console.log(taskList);
+    //Call the listAllTasks function to print the array
+    listAllTasks();
 }
 
 //Delete "Sleeping" from the array
