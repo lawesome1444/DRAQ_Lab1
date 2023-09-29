@@ -21,3 +21,19 @@ console.log("\nExercise 3(c)");
 let listAllTasks = taskList.map((item)=>{
     console.log(item);
 })
+
+//3(d) Receives a task and deletes it from the taskList array
+deleteTask =(task)=>{
+    //Stores the index value
+    let index;
+    //Assign the variable "index" the index value (spot in the array) of the passed task
+    index = taskList.indexOf(task);
+    //Delete 1 array element at the position found earlier
+    //Aka, delete the passed task element
+    taskList.splice(index, 1);
+    //Print the array to demonstrate the element was deleted
+    console.log(taskList);
+}
+
+//Delete "Sleeping" from the array
+deleteTask("Sleeping");
