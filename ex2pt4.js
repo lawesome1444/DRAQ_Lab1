@@ -1,13 +1,15 @@
 //2(d) .map function
+//Age array
 const ages = [25, 31, 42, 77];
 
-let partD = ages.map((item)=>{
+
+let ageMultiply = ages.map((age)=>{
     //If the number is greater or equal to 70, do not double it. Otherwise, double the value
-    if (item >= 70)
-        return item;
+    if (age >= 70)
+        return age;
     else
-        return item * 2;
+        return age * 2;
 })
 
-//Call partD function and print the array out to console
-console.log(partD);
+//Call the ageMultiply function and print the array out to console
+console.log(ageMultiply);
