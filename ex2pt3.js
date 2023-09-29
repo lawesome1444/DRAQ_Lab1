@@ -1,8 +1,7 @@
 //2(c) Arrow function returning the sum of 2 numbers
 let sumOfDataRep = (a, b)=>{
     //Get the sum of the numbers
-    sumOfDataRep = a + b;
-    //Print to console
-    console.log(sumOfDataRep);
+    return a + b;
 }
-sumOfDataRep(5, 4);
+//Call the sumOfDataRep function and print it's value
+console.log(sumOfDataRep(5, 4));
